@@ -48,8 +48,7 @@ public:
         if (color[u] != 0) return; 
         color[u] = true;
         for(int i = 0; i < edges[u].size(); i++) {
-            int v = edges[u][i];
-            dfs(v);
+            dfs(edges[u][i]);
         }
     }
 
